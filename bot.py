@@ -1,6 +1,7 @@
 import streamlit as st
-from elevenlabs import generate, save
+from elevenlabs import generate
 from io import BytesIO
+import base64
 
 def text_to_parags(text):
     """Split text into paragraphs."""
@@ -65,13 +66,6 @@ def main():
             # Display the audio player
             st.audio(audio_data, format='audio/mp3')
 
-            # Create a download link for the audio file
-            st.markdown(
-                f"<a href='data:audio/mp3;base64,{output_audio.decode()}' download='speech.mp3'>Download Speech</a>",
-                unsafe_allow_html=True,
-            )
-        else:
-            st.warning("Please enter some text to convert.")
 
 if __name__ == "__main__":
     main()
