@@ -1,7 +1,6 @@
 import streamlit as st
 from elevenlabs import generate
 from io import BytesIO
-import base64
 
 def text_to_parags(text):
     """Split text into paragraphs."""
