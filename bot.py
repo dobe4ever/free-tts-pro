@@ -1,3 +1,5 @@
+### streamlit run bot.py
+
 import streamlit as st
 from elevenlabs import generate
 from io import BytesIO
@@ -68,3 +70,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+### streamlit run bot.py
