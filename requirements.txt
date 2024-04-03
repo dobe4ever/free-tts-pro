@@ -1,2 +1,2 @@
 streamlit
-elevenlabs==0.2.24
+elevenlabs==0.0.01
